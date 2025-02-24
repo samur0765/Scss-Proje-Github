@@ -1,0 +1,11 @@
+@mixin ekran {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin ekran2 {
+    @media (max-width: 800px){
+        @content;
+    }
+}

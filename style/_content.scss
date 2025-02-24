@@ -1,0 +1,167 @@
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    @include ekran2{
+        flex-direction: column;
+    }
+
+    .about {
+        margin-top: 20px;
+        
+        hr{
+            @include ekran2{
+                width: 80%;
+            }
+        }
+
+        .image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            img {
+                width: 240px;
+                height: 200px;
+                margin-left: 5px;
+            }
+        }
+        
+
+        .title {
+            margin-top: 20px;
+            text-align: center;
+
+            h4 {
+                padding-bottom: 10px;
+            }
+
+            button {
+                width: 100%;
+                height: 36px;
+                border: 1px solid rgba(27, 31, 35, 0.2);
+                background-color: #eff3f6;
+                background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+                background: none;
+                border-radius: 5px;
+                cursor: pointer;
+                @include ekran2 {
+                    width: 80%;
+                }
+            }
+        }
+
+        .dsc {
+            margin-top: 16px;
+            text-align: center;
+        }
+    }
+
+    .projects {
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 40px;
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            transition: all 0.4s ;
+            @include ekran2{
+                display: none;
+            }
+           
+            a {
+                color: #586069;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .section {
+            display: flex;
+            margin-top: 30px;
+            justify-content: space-between;
+            align-items: center;
+
+
+            p{
+                @include ekran2{
+                    display: none;
+                }
+            }
+
+            a {
+                font-size: 16px;
+                color: #586069;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            @include ekran2{
+                justify-content: center;
+                align-items: center;
+            }
+
+            .projects-bar {
+                padding: 10px;
+                border: 1px solid #000;
+                width: 400px;
+                margin-top: 20px;
+                margin-right: 10px;
+                position: relative;
+                height: 100px;
+                @include ekran2{
+                    display: flex;
+                    flex-direction: column;
+                    width: 300px;
+                }
+
+                .up {
+                    display: flex;
+                    gap: 10px;
+
+                    a {
+                        color: blue;
+                        font-weight: 600;
+                        transition: all 0.4s;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .right {
+                        svg {
+                            position: absolute;
+                            right: 10px;
+                        }
+                    }
+
+                }
+
+                .down {
+                    margin-top: 50px;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    span {
+                        background-color: #563d7c;
+                        height: 12px;
+                        width: 12px;
+                        border-radius: 50%;
+                        display: inline-block;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+    }
+}

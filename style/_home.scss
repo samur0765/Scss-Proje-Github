@@ -1,0 +1,61 @@
+.section {
+    margin-top: 20px;
+    width: 60%;
+    
+    .text-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            padding-right: 30px;
+        }
+    }
+
+    .container {
+        border: 1px solid #555252;
+        margin-right: 35px;
+        margin: 20px 0;
+        position: relative;
+
+
+        .cards {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0 10px;
+            font-size: 12px;
+
+        }
+
+        .year {
+            display: flex;
+            flex-direction: column;
+            padding: 0 15px;
+
+            p {
+                font-size: 12px;
+            }
+
+        }
+
+        .learn {
+            display: flex;
+            align-items: center;
+            margin: 0 15px;
+            padding: 15px 0;
+
+            a {
+                color: #555252;
+            }
+
+            .yazilar {
+                display: flex;
+
+                padding: 10px 20px;
+                position: absolute;
+                right: 10px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
